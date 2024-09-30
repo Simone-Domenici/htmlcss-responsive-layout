@@ -129,6 +129,27 @@ main {
     height: 100%;
 }
 
+.socials {
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.socials > * {
+    border-radius: 999px;
+    background-color: white;
+    line-height: 45px;
+    padding: 0 70px;
+}
+
+.socials span {
+    font-weight: 600;
+}
+
+.social-container {
+    margin: 35px auto;
+}
+
 /*  Utilities */
 
 .display-flex {
@@ -173,6 +194,10 @@ main {
         flex-wrap: wrap;
     }
 
+    .socials span {
+        display: none;
+    }
+
 }
 
 /* Smartphone */
@@ -192,6 +217,14 @@ main {
 
     .video-wrapper {
         height: 320px;
+    }
+
+    .socials > * {
+        padding: 0 20px;
+    }
+
+    .banner {
+        display: none;
     }
 
 }
