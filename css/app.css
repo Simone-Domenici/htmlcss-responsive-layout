@@ -150,6 +150,38 @@ main {
     margin: 35px auto;
 }
 
+/* Presentation */
+
+.info h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 45px;
+}
+
+.info h2::after {
+    display: table;
+    content: '';
+    border-bottom: 3px solid #F7972E;
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.presentation-img {
+    width: 375px;
+    margin-top: 35px;
+    position: relative;
+    float: left;
+    padding-right: 15px;
+}
+
+.info p {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 40px;
+}
+
 /*  Utilities */
 
 .display-flex {
@@ -227,4 +259,14 @@ main {
         display: none;
     }
 
+    .info .row .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info .presentation-img {
+        position: static;
+        float: none;
+        align-self: center;
+    }
 }
